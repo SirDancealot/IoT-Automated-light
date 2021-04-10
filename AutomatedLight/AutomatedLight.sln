@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedLight", "AutomatedLight.csproj", "{FD6A006A-2774-4DD7-AE7B-429B37F22440}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD6A006A-2774-4DD7-AE7B-429B37F22440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6A006A-2774-4DD7-AE7B-429B37F22440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6A006A-2774-4DD7-AE7B-429B37F22440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6A006A-2774-4DD7-AE7B-429B37F22440}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B8A9D49-7241-4300-A934-9795D029B4BD}
+	EndGlobalSection
+EndGlobal
