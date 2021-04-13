@@ -9,7 +9,7 @@ using AutomatedLight.Models;
 
 namespace AutomatedLight.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class DataController : ControllerBase
     {
@@ -20,7 +20,7 @@ namespace AutomatedLight.Controllers
             _context = context;
         }
 
-        // GET: api/Data
+        // GET: Data
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DataItem>>> GetDataItems()
         {
@@ -35,7 +35,7 @@ namespace AutomatedLight.Controllers
             return items.Max();
         }
 
-        // POST: api/Data?temp=<value>&lux=<value>
+        // POST: Data?temp=<value>&lux=<value>
         [HttpPost]
         public async Task<ActionResult<DataItem>> PostData(double temp, double lux)
         {
