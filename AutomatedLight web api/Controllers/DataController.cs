@@ -35,15 +35,16 @@ namespace AutomatedLight.Controllers
             return items.Max();
         }
 
-        // POST: Data?temp=<value>&lux=<value>
+        // POST: Data?temp=<value>&lux=<value>&humidity=<value>
         [HttpPost]
-        public async Task<ActionResult<DataItem>> PostData(double temp, double lux)
+        public async Task<ActionResult<DataItem>> PostData(double temp, double lux, double humidity)
         {
             DataItem item = new DataItem
             {
                 Temp = temp,
                 Time = DateTime.Now,
-                Lux = lux
+                Lux = lux,
+                Humidity = humidity
             };
 
             _context.DataItems.Add(item);
