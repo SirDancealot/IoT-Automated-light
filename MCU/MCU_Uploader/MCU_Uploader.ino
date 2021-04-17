@@ -1,26 +1,36 @@
-#include <WiFi.h>
-#include <HTTPClient.h>
+#include <ESP8266HTTPClient.h>
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+#include <ESP8266WiFiMulti.h>   // Include the Wi-Fi-Multi library
+#include <ESP8266WebServer.h>   // Include the WebServer library
+#include <ESP8266mDNS.h>        // Include the mDNS library
 
-const char* ssid = "REPLACE_WITH_YOUR_SSID";
-const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+ESP8266WiFiMulti wifiMulti;
 
-const char* serverName = "http://mj-software.dk/LightAutomation";
+const char* ssid = "CableBox-3807";
+const char* password = "ywz2ezyzmw";
 
+const char* serverName = "http://api.mj-software.dk/data";
+
+unsigned long lastTime = 0;
 unsigned long timerDelay = 5000;
 float temp, lux;
 
 void setup() {
   Serial.begin(9600); 
 
-  WiFi.begin(ssid, password);
+  wifiMulti.addAP(ssid, password);
   Serial.println("Connecting");
-  while(WiFi.status() != WL_CONNECTED) {
+  while(wifiMulti.run() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
   }
   Serial.println("");
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
+  
+  temp = 50;
+  lux = 100;
 }
 
 void loop() {
@@ -33,20 +43,22 @@ void loop() {
       HTTPClient http;
       
       //get temperature
-      float reading = analogRead(kPinTemp);     //Analog pin reading output voltage by Lm35
-      float temperatureC=kPinTemp/2.048;        //Finding the true centigrade/Celsius temperature
-      
+      // float reading = analogRead(kPinTemp);     //Analog pin reading output voltage by Lm35
+      // float temperatureC=kPinTemp/2.048;        //Finding the true centigrade/Celsius temperature
+
       //get lightLevel
       
       // Your Domain name with URL path or IP address with path
-      http.begin(serverName);
-
+      
       // Specify content-type header
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
       // Data to send with HTTP POST
-      String httpRequestData = "temp="+ temp +"&lux="+ lux +"";           
+      char httpRequestData[50];
+      //sprintf(httpRequestData,"?temp=%f&lux=%f",temp,lux);   
+      String test = "temp=51&lux=101";
+      http.begin(serverName);       
       // Send HTTP POST request
-      int httpResponseCode = http.POST(httpRequestData);
+      int httpResponseCode = http.POST(test);
      
       Serial.print("HTTP Response code: ");
       Serial.println(httpResponseCode);
