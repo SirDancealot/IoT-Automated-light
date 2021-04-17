@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I5CUKm0olQsE7V3Fgp+FpZzdN6qCl1c109ePEuOOnndA2nqeOnJ/cS8WURHwuWlw0xSvVyDpbolefqNth5jnfQ==",
+  "dgSpecHash": "pIBliEuBkeQ97PJwNrDwzfpFI/XziMgZW+ewULsaHH4byloruFGr+ydWtotE1YSguI1eHw/MkkadgueEnVE1Vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mj\\Desktop\\DTU\\6. semester\\IoT\\IoT assignment\\IoT-Automated-light\\AutomatedLight\\AutomatedLight.csproj",
+  "projectFilePath": "C:\\Users\\mj\\Desktop\\DTU\\6. semester\\IoT\\IoT assignment\\IoT-Automated-light\\AutomatedLight web api\\AutomatedLight.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mj\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\mj\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
