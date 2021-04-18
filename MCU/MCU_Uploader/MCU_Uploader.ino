@@ -1,14 +1,13 @@
 #include <ESP8266HTTPClient.h>
 #include <ESP8266WiFi.h>
-#include <WiFiClient.h>
 #include <ESP8266WiFiMulti.h>   // Include the Wi-Fi-Multi library
 #include <ESP8266WebServer.h>   // Include the WebServer library
 #include <ESP8266mDNS.h>        // Include the mDNS library
 
 ESP8266WiFiMulti wifiMulti;
 
-const char* ssid = "CableBox-3807";
-const char* password = "ywz2ezyzmw";
+const char* ssid = "Pouline";
+const char* password = "lakimini";
 
 const char* serverName = "http://api.mj-software.dk/data";
 
@@ -53,12 +52,12 @@ void loop() {
       // Specify content-type header
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
       // Data to send with HTTP POST
-      char httpRequestData[50];
-      //sprintf(httpRequestData,"?temp=%f&lux=%f",temp,lux);   
-      String test = "temp=51&lux=101";
-      http.begin(serverName);       
+      char *httpPostData;
+      httpPostData = (char *)calloc(sizeof(char), 50);
+      sprintf(httpPostData,"?temp=%f&lux=%f",temp,lux);
+      http.begin(serverName + String(httpPostData));
       // Send HTTP POST request
-      int httpResponseCode = http.POST(test);
+      int httpResponseCode = http.POST("");
      
       Serial.print("HTTP Response code: ");
       Serial.println(httpResponseCode);
