@@ -6,8 +6,16 @@
 
 ESP8266WiFiMulti wifiMulti;
 
+//Wifi id and password
 const char* ssid = "Pouline";
 const char* password = "lakimini";
+
+//Set light source pin
+const byte led = <insert pin>;
+
+//Data input pins
+const byte tempAnalog = <tempreture pin>;
+const byte luxAnalog = <lux pin>;
 
 const char* serverName = "http://api.mj-software.dk/data";
 
@@ -27,9 +35,9 @@ void setup() {
   Serial.println("");
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
-  
-  temp = 50;
-  lux = 100;
+
+  pinMode(led,OUTPUT);
+  digitalWrite(led,LOW);
 }
 
 void loop() {
@@ -42,12 +50,11 @@ void loop() {
       HTTPClient http;
       
       //get temperature
-      // float reading = analogRead(kPinTemp);     //Analog pin reading output voltage by Lm35
-      // float temperatureC=kPinTemp/2.048;        //Finding the true centigrade/Celsius temperature
-
+      float reading = analogRead(tempreture pin);     //Analog pin reading output voltage by Lm35
+      temp=reading/2.048;                             //Finding the true centigrade/Celsius temperature
+     
       //get lightLevel
-      
-      // Your Domain name with URL path or IP address with path
+      lux = analogRead(luxAnalog);
       
       // Specify content-type header
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -64,10 +71,36 @@ void loop() {
         
       // Free resources
       http.end();
-    }
-    else {
+    } else {
       Serial.println("WiFi Disconnected");
     }
+
+    // Send http GET -----------------------------
+    HTTPClient httpget;
+    
+    String serverPath = serverName + "/latest/lux";
+
+    httpget.begin(serverPath.c_str());
+
+    int httpgetResponseCode = http.GET();
+
+     if (httpgetResponseCode>0) {
+        Serial.print("HTTP Response code: ");
+        Serial.println(httpgetResponseCode);
+        String payload = httpget.getString();
+        Serial.println(payload);
+      }
+      else {
+        Serial.print("Error code: ");
+        Serial.println(httpResponseCode);
+      }
+
+      if(lux<500){
+        digitalWrite(led,HIGH);
+      } else {
+        digitalWrite(led,LOW);
+      }
+    
     lastTime = millis();
   }
 }
