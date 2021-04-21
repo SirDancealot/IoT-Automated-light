@@ -24,15 +24,39 @@ namespace AutomatedLight.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DataItem>>> GetDataItems()
         {
-            return await _context.DataItems.ToListAsync();
+            return await _context.DataItem.ToListAsync();
         }
 
         [HttpGet("latest")]
         public async Task<ActionResult<DataItem>> GetLatest()
         {
-            IEnumerable<DataItem> items = await _context.DataItems.ToListAsync(); 
+            DataItem max;
 
-            return items.Max();
+            try
+            {
+                IEnumerable<DataItem> items = await _context.DataItem.ToListAsync();
+                max = items.Max();
+            } catch (Exception)
+            {
+                max = new DataItem()
+                {
+                    Lux = 0.0,
+                    Humidity = 0.0,
+                    Temp = 0.0,
+                    Time = DateTime.Now
+                };
+            }
+
+            if (max == null)
+                max = new DataItem()
+                {
+                    Lux = 0.0,
+                    Humidity = 0.0,
+                    Temp = 0.0,
+                    Time = DateTime.Now
+                };
+
+            return max;
         }
 
         [HttpGet("latest/temp")]
@@ -67,7 +91,7 @@ namespace AutomatedLight.Controllers
                 Humidity = humidity
             };
 
-            _context.DataItems.Add(item);
+            _context.DataItem.Add(item);
             await _context.SaveChangesAsync();
 
             return item;

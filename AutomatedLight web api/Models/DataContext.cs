@@ -10,6 +10,6 @@ namespace AutomatedLight.Models
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         
-        public DbSet<DataItem> DataItems { get; set; }
+        public DbSet<DataItem> DataItem { get; set; }
     }
 }
