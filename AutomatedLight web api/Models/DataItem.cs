@@ -7,7 +7,8 @@ namespace AutomatedLight.Models
 {
     public class DataItem : IComparable
     {
-        public Guid Id { get; set; }
+        //public Guid Id { get; set; }
+        public int Id { get; set; }
         public double Temp { get; set; }
         public double Lux { get; set; }
         public double Humidity { get; set; }

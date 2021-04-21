@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 using AutomatedLight.Models;
 
 namespace AutomatedLight
@@ -20,7 +21,10 @@ namespace AutomatedLight
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("DataList"));
+            //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("DataList"));
+
+
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("AutomatedLightDatabase")));
             services.AddControllers();
         }
 
