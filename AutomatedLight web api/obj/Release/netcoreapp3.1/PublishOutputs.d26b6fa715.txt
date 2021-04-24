@@ -6,6 +6,10 @@ C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Autom
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\AutomatedLight.pdb
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\EntityFramework.SqlServer.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\EntityFramework.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Web.Cors.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Net.Http.Formatting.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Web.Http.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Web.Http.Cors.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.CodeAnalysis.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.CodeAnalysis.CSharp.dll
@@ -42,6 +46,7 @@ C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Autom
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.Bson.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\NuGet.Frameworks.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\System.CodeDom.dll
 C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\AutomatedLight web api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Collections.Immutable.dll

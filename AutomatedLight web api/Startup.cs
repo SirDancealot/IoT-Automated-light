@@ -21,9 +21,12 @@ namespace AutomatedLight
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("DataList"));
-
-
+            services.AddCors( options => options.AddPolicy("AllowAll", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("AutomatedLightDatabase")));
             services.AddControllers();
         }
@@ -39,6 +42,8 @@ namespace AutomatedLight
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
