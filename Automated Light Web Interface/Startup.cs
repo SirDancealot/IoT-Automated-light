@@ -47,6 +47,8 @@ namespace Automated_Light_Web_Interface
             {
                 endpoints.MapRazorPages();
             });
+
+          
         }
     }
 }
