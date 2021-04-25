@@ -5,10 +5,4 @@
     <RootNamespace>Automated_Light_Web_Interface</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="microsoft-web-helpers" Version="2.1.20710.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="System.Net.Http" Version="4.3.4" />
-  </ItemGroup>
-
 </Project>
