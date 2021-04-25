@@ -1,3 +1,45 @@
+<<<<<<< HEAD
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\appsettings.json
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.exe
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.deps.json
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.runtimeconfig.json
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.runtimeconfig.dev.json
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\ref\Automated Light Web Interface.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.pdb
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.Views.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.Views.pdb
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.csprojAssemblyReference.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.AssemblyInfoInputs.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.AssemblyInfo.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.csproj.CoreCompileInputs.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.RazorAssemblyInfo.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.RazorAssemblyInfo.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\staticwebassets\Automated Light Web Interface.StaticWebAssets.Manifest.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\staticwebassets\Automated Light Web Interface.StaticWebAssets.xml
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\scopedcss\bundle\Automated Light Web Interface.styles.css
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.TagHelpers.input.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.TagHelpers.output.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.RazorCoreGenerate.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.RazorTargetAssemblyInfo.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.RazorTargetAssemblyInfo.cs
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.Views.pdb
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\ref\Automated Light Web Interface.dll
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.pdb
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.genruntimeconfig.cache
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.csproj.CopyComplete
+=======
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\appsettings.json
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.exe
@@ -39,3 +81,4 @@ C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Deb
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\ref\Automated Light Web Interface.dll
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.pdb
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.genruntimeconfig.cache
+>>>>>>> 5f46d4027d992e3e8608bd8e864827821a84a7b7

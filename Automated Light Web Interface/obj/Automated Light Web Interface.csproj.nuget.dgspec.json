@@ -1,28 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Deadb\\Desktop\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj": {}
+    "C:\\Users\\mj\\Desktop\\DTU\\6. semester\\IoT\\IoT assignment\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Deadb\\Desktop\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj": {
+    "C:\\Users\\mj\\Desktop\\DTU\\6. semester\\IoT\\IoT assignment\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deadb\\Desktop\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj",
+        "projectUniqueName": "C:\\Users\\mj\\Desktop\\DTU\\6. semester\\IoT\\IoT assignment\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj",
         "projectName": "Automated Light Web Interface",
-        "projectPath": "C:\\Users\\Deadb\\Desktop\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj",
-        "packagesPath": "C:\\Users\\Deadb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deadb\\Desktop\\IoT-Automated-light\\Automated Light Web Interface\\obj\\",
+        "projectPath": "C:\\Users\\mj\\Desktop\\DTU\\6. semester\\IoT\\IoT assignment\\IoT-Automated-light\\Automated Light Web Interface\\Automated Light Web Interface.csproj",
+        "packagesPath": "C:\\Users\\mj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mj\\Desktop\\DTU\\6. semester\\IoT\\IoT assignment\\IoT-Automated-light\\Automated Light Web Interface\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Deadb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "net5.0": {
@@ -57,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
