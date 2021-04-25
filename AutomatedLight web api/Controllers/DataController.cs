@@ -78,6 +78,12 @@ namespace AutomatedLight.Controllers
             ActionResult<DataItem> item = await GetLatest();
             return item.Value.Humidity;
         }
+        [HttpGet("latest/{n}")]
+        public IEnumerable<DataItem> GetLatestN(int n)
+        {
+            IEnumerable<DataItem> items = _context.DataItem.OrderByDescending(item => item.Time).Take(n);
+            return items;
+        }
 
 
         // POST: Data?temp=<value>&lux=<value>&humidity=<value>
