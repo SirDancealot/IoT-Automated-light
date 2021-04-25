@@ -51,15 +51,6 @@ C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Deb
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.pdb
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.Views.dll
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Automated Light Web Interface.Views.pdb
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Microsoft.Web.Helpers.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\System.Web.Razor.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\System.Web.Helpers.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\System.Web.WebPages.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\WebMatrix.Data.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\WebMatrix.WebData.dll
-C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.csprojAssemblyReference.cache
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.AssemblyInfoInputs.cache
