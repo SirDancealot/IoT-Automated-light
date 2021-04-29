@@ -82,3 +82,4 @@ C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Deb
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.pdb
 C:\Users\Deadb\Desktop\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Automated Light Web Interface.genruntimeconfig.cache
 >>>>>>> 5f46d4027d992e3e8608bd8e864827821a84a7b7
+C:\Users\mj\Desktop\DTU\6. semester\IoT\IoT assignment\IoT-Automated-light\Automated Light Web Interface\obj\Debug\net5.0\Razor\Pages\IOTDashboard.cshtml.g.cs

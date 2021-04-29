@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Automated_Light_Web_Interface</RootNamespace>
+    <UserSecretsId>7c54694a-c84d-4feb-a7ca-03d13360f6a6</UserSecretsId>
   </PropertyGroup>
 
 </Project>
