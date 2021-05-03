@@ -3,16 +3,20 @@
 #include <ESP8266WiFiMulti.h>   // Include the Wi-Fi-Multi library
 #include <ESP8266WebServer.h>   // Include the WebServer library
 #include <ESP8266mDNS.h>        // Include the mDNS library
+#include <DHT.h>
+#define DHTTYPE DHT11 
+DHT dht(5, DHTTYPE);
+
 
 ESP8266WiFiMulti wifiMulti;
 
 
 //Wifi id and password
-const char* ssid = "Mahdi - Iphone";
-const char* password = "Stjerne1";
+const char* ssid = "iphone";
+const char* password = "12345678";
 
 //Set light source pin
-const byte led = 5;
+const byte led = 4;
 
 
 const char* serverName = "http://api.mj-software.dk/data";
@@ -20,14 +24,18 @@ const char* serverName = "http://api.mj-software.dk/data";
 unsigned long lastTime = 0;
 unsigned long timerDelay = 5000;
 float temp, lux;
+float voltage = 0;
+float humidity = 0;
 
-const int cInput = A0; //analog signal
-const int cSelectPin = 15; //Pin som vælger mellem CX og CY
+const int LDR = A0; //analog signal
 int inputValue;
 
 void setup()  {
   Serial.begin(9600);
-  pinMode(cSelectPin, OUTPUT); //sætter pin D8 som output
+  dht.begin();
+Serial.println("Temperatur and humidity\n\n");
+delay(500);  
+ // pinMode(cSelectPin, OUTPUT); //sætter pin D8 som output
   wifiMulti.addAP(ssid, password);
   Serial.println("Connecting");
   while(wifiMulti.run() != WL_CONNECTED) {
@@ -51,25 +59,30 @@ void loop()
     if(WiFi.status()== WL_CONNECTED){
       HTTPClient http;
       
-      //get temperature
-   //   float reading = analogRead(tempreture pin);     //Analog pin reading output voltage by Lm35
-    //  temp=reading/2.048;                             //Finding the true centigrade/Celsius temperature
        
-  digitalWrite(cSelectPin, LOW); //pin D8 lav, CX bliver valgt
-  inputValue = analogRead(cInput); //læser analog værdi fra CX
-  temp = inputValue;
-  Serial.print(String(inputValue) + "\t"); //printer værdi ud
   
-  digitalWrite(cSelectPin, HIGH); //pin D8 høj, CY bliver valgt
-  inputValue = analogRead(cInput); //læser analog værdi fra CY
-  lux = inputValue;
-  Serial.print(String(inputValue) + "\t"); //printer værdi ud
-  
+temp = dht.readTemperature();
+Serial.print("Temperature = ");
+Serial.print(String(temp) + "\t"); //printer værdi ud
+Serial.println(" C  ");
+delay(300);
+
+humidity = dht.readHumidity();
+Serial.print("Humidity = ");
+Serial.print(String(humidity) + "\t"); //printer værdi ud
+Serial.println(" %  ");
+delay(300);
+
+lux = analogRead(LDR);//read the input on analog pin 0
+voltage = lux*(3.3/1023.0); //Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V)
+Serial.print(String(voltage) + "\t"); //printer værdi ud
+
+
+    
   Serial.println();
   
   delay(100); //delay med 100 ms
-      //get lightLevel
-    //  lux = analogRead(luxAnalog);
+
       
       // Specify content-type header
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -110,11 +123,11 @@ void loop()
         Serial.println(httpResponseCode);
       }
 
-//      if(lux<500){
-//        digitalWrite(led,HIGH);
-//      } else {
-//        digitalWrite(led,LOW);
-//      }
+      if(lux<500){
+        digitalWrite(led,HIGH);
+      } else {
+        digitalWrite(led,LOW);
+      }
     
     lastTime = millis();
   }
