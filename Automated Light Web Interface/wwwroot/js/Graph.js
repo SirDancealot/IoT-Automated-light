@@ -61,8 +61,8 @@ window.onload = async function () {
             valueFormatString: "HH:mm:ss, DD/MM/YY"
         },
         axisY: {
-            title: "Light level (in lux)",
-            suffix: " lux"
+            title: "Light level (Reported voltage from lux-sensor)",
+            suffix: " V"
         },
         legend: {
             cursor: "pointer",
