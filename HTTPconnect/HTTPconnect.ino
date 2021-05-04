@@ -121,21 +121,31 @@ void loop() {
       display.setCursor(0, 0);            // Start at top-left corner
       display.println("Temp: ");
       display.display();      // Show initial text
-      sendFloatXY(arraydata[1],29,0);
+      sendFloatXY(arraydata[1],30,0);
+      display.setCursor(62, 0);            // Start at top-left corner
+      display.println("C");
+      display.display();      // Show initial text
+    
 
       display.setTextSize(1);             // Normal 1:1 pixel scale
       display.setTextColor(SSD1306_WHITE);        // Draw white text
-      display.setCursor(1, 10);            // Start at top-left corner
-      display.println("Lux: ");
+      display.setCursor(1, 11);            // Start at top-left corner
+      display.println("Volt: ");
       display.display();      // Show initial text
       sendFloatXY(arraydata[2],29,10);
+      display.setCursor(62, 10);            // Start at top-left corner
+      display.println("V");
+      display.display();      // Show initial text
 
       display.setTextSize(1);             // Normal 1:1 pixel scale
       display.setTextColor(SSD1306_WHITE);        // Draw white text
-      display.setCursor(1, 20);            // Start at top-left corner
+      display.setCursor(1, 21);            // Start at top-left corner
       display.println("HUM: ");
       display.display();      // Show initial text
       sendFloatXY(arraydata[3],29,20);
+       display.setCursor(62, 20);            // Start at top-left corner
+      display.println("%");
+      display.display();      // Show initial text
     }
     else {
       Serial.print("Error code: ");

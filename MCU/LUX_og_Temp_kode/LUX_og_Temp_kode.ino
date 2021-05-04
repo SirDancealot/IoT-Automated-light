@@ -11,7 +11,7 @@ ESP8266WiFiMulti wifiMulti;
 DHT dht(5, DHTTYPE);
 
 //Wifi id and password
-const char* ssid = "iphone";
+const char* ssid = "iPhone";
 const char* password = "12345678";
 
 //Set light source pin
@@ -22,7 +22,7 @@ unsigned long timerDelay = 5000;
 float temp = 0;
 int lux = 0;
 float voltage = 0;
-float humidity = 0;
+int humidity = 0;
 const int LDR = A0; //analog signal
 
 void setup()  {
@@ -59,7 +59,7 @@ void loop()
 temp = dht.readTemperature();
 Serial.print("Temperature = ");
 Serial.print(temp);
-Serial.println(" C°  ");
+Serial.println(" °C  ");
 delay(300);
 
 //Code for humidity (DHT11)
@@ -86,7 +86,7 @@ analogWrite(LED, lux);
       // Data to send with HTTP POST
       char *httpPostData;
       httpPostData = (char *)calloc(sizeof(char), 50);
-      sprintf(httpPostData,"?temp=%f&lux=%f",temp,lux);
+      sprintf(httpPostData,"?temp=%f&lux=%f&humidity=%d",temp,voltage, humidity);
       http.begin(serverName + String(httpPostData));
       // Send HTTP POST request
       int httpResponseCode = http.POST("");
@@ -107,7 +107,7 @@ analogWrite(LED, lux);
 
     httpget.begin(serverPath.c_str());
 
-    int httpgetResponseCode = http.GET();
+    int httpgetResponseCode = httpget.GET();
 
      if (httpgetResponseCode>0) {
         Serial.print("HTTP Response code: ");
@@ -117,7 +117,7 @@ analogWrite(LED, lux);
       }
       else {
         Serial.print("Error code: ");
-        Serial.println(httpResponseCode);
+        Serial.println(httpgetResponseCode);
       }
 
 //      if(lux<500){
