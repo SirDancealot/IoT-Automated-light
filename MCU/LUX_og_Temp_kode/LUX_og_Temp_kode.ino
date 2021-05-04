@@ -119,13 +119,6 @@ analogWrite(LED, lux);
         Serial.print("Error code: ");
         Serial.println(httpgetResponseCode);
       }
-
-//      if(lux<500){
-//        digitalWrite(led,HIGH);
-//      } else {
-//        digitalWrite(led,LOW);
-//      }
-
     lastTime = millis();
   }
 }
