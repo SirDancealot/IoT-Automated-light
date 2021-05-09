@@ -16,8 +16,9 @@
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
 #define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
-
+//the network SSID
 const char* ssid = "iPhone";
+//The password for the network
 const char* password = "12345678";
 const char* serverName = "http://api.mj-software.dk/data/latest";
 unsigned long lastTime = 0;
@@ -26,25 +27,23 @@ unsigned long lastTime = 0;
 // the following variables are unsigned longs because the time, measured in
 // milliseconds, will quickly become a bigger number than can be stored in an int.
 unsigned long timerDelay = 5000;
-// Timer set to 10 minutes (600000)
-//unsigned long timerDelay = 600000;
-// Set timer to 5 seconds (5000)
 
 void setup() {
-  // put your setup code here, to run once:
+  // Setting BAUD RATE
   Serial.begin(9600);
   Serial.println();
   Serial.println();
+  //informing the user what network the user connects to
   Serial.print("Connecting to ");
   Serial.println(ssid);
-
+  //connecting to wifi
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED)
   { //Wait till connects
     delay(500);
     Serial.print(".");
   }
-
+  //informing the user that the connection is established
   Serial.println("");
   Serial.println("WiFi connected");
   //Serial.println(WiFi.localIP()); //Use if using DHCP to know the IP
@@ -66,7 +65,7 @@ void setup() {
 float arraydata[5];
 void loop() {
   // put your main code here, to run repeatedly:
-  delay(5000);
+  delay(1000);
 
   Serial.print("connecting to ");
   //Check WiFi connection status
@@ -114,6 +113,9 @@ void loop() {
       Serial.print("Humidity = ");
       Serial.println(arraydata[3]);
 
+      /*
+       * Printing out the value of temp to OLED SSD1306 Display
+      */
       //displaying Temp in OLED
       display.clearDisplay();
       display.setTextSize(1);             // Normal 1:1 pixel scale
@@ -121,21 +123,37 @@ void loop() {
       display.setCursor(0, 0);            // Start at top-left corner
       display.println("Temp: ");
       display.display();      // Show initial text
-      sendFloatXY(arraydata[1],29,0);
-
-      display.setTextSize(1);             // Normal 1:1 pixel scale
-      display.setTextColor(SSD1306_WHITE);        // Draw white text
-      display.setCursor(1, 10);            // Start at top-left corner
-      display.println("Lux: ");
+      sendFloatXY(arraydata[1],30,0);
+      display.setCursor(62, 0);            // Start at top-left corner
+      display.println("C");
       display.display();      // Show initial text
-      sendFloatXY(arraydata[2],29,10);
-
+    
+      /*
+       * Printing out the value of Volt to OLED SSD1306 Display
+      */
       display.setTextSize(1);             // Normal 1:1 pixel scale
       display.setTextColor(SSD1306_WHITE);        // Draw white text
-      display.setCursor(1, 20);            // Start at top-left corner
+      display.setCursor(1, 11);            // Start at top-left corner
+      display.println("Volt: ");
+      display.display();      // Show initial text
+      sendFloatXY(arraydata[2],35,10);
+      display.setCursor(62, 10);            // Start at top-left corner
+      display.println("V");
+      display.display();      // Show initial text
+
+
+      /*
+       * Printing out the value of Humidity to OLED SSD1306 Display
+      */
+      display.setTextSize(1);             // Normal 1:1 pixel scale
+      display.setTextColor(SSD1306_WHITE);        // Draw white text
+      display.setCursor(1, 21);            // Start at top-left corner
       display.println("HUM: ");
       display.display();      // Show initial text
       sendFloatXY(arraydata[3],29,20);
+       display.setCursor(62, 20);            // Start at top-left corner
+      display.println("%");
+      display.display();      // Show initial text
     }
     else {
       Serial.print("Error code: ");
