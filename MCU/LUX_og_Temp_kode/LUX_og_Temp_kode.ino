@@ -33,7 +33,6 @@ void setup()  {
   Serial.begin(9600);
   //Setting LED to output
   pinMode(LED, OUTPUT);
-  //Serial.println("Temperatur, Humidity & Lux\n\n");
   delay(100);
 
   wifiMulti.addAP(ssid, password);

@@ -78,29 +78,19 @@ void loop() {
     // Send HTTP GET request
     int httpResponseCode = http.GET();
     if (httpResponseCode > 0) {
-      // Serial.print("HTTP Response code: ");
-      // Serial.println(httpResponseCode);
       String payload = http.getString();
-      //Serial.println(payload);
       Serial.println("\n");
       JSONVar myObject = JSON.parse(payload);
-      // JSON.typeof(jsonVar) can be used to get the type of the var
       if (JSON.typeof(myObject) == "undefined") {
         Serial.println("Parsing input failed!");
         return;
       }
-
-      //Serial.print("JSON object = ");
-      //Serial.println(myObject);
 
       // myObject.keys() can be used to get an array of all the keys in the object
       JSONVar keys = myObject.keys();
 
       for (int i = 0; i < keys.length(); i++) {
         JSONVar value = myObject[keys[i]];
-        /*Serial.print(keys[i]);
-          Serial.print(" = ");
-          Serial.println(value);*/
         arraydata[i] = double(value);
       }
 //Printing out the values to the Serial
@@ -167,14 +157,7 @@ void loop() {
   }
   lastTime = millis();
 }
-/*void sendStringXY(char *string, int x, int y)
-{
-  display.setTextColor(SSD1306_WHITE);        // Draw white text
-  display.setCursor(x, y);            // Start at top-left corner
-  display.println(*string);
-  display.display();      // Show initial text
-}
-*/
+
 //function that prints a float variables out to the OLED
 void sendFloatXY(float values, int x, int y)
 {
