@@ -1,5 +1,5 @@
-#include <ESP8266HTTPClient.h>
-#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>  // Include the HTTPClient libary
+#include <ESP8266WiFi.h>        // Include the Wi-Fi libary
 #include <ESP8266WiFiMulti.h>   // Include the Wi-Fi-Multi library
 #include <ESP8266WebServer.h>   // Include the WebServer library
 #include <ESP8266mDNS.h>        // Include the mDNS library
@@ -52,7 +52,6 @@ void setup()  {
 
 void loop()
 {
-  // Send http POST -----------------------------
   if ((millis() - lastTime) > timerDelay) {
 
     //Wifi
@@ -100,8 +99,10 @@ void loop()
 
       delay(100); //delay med 100 ms
 
-      // Specify content-type header
+      // Link - How to use HTTP GET & POST - https://randomnerdtutorials.com/esp32-http-get-post-arduino/
+      // Send http POST -----------------------------
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
+      
       // Data to send with HTTP POST
       char *httpPostData;
       httpPostData = (char *)calloc(sizeof(char), 50);
@@ -110,18 +111,17 @@ void loop()
       // Send HTTP POST request
       int httpResponseCode = http.POST("");
 
-      //  Serial.print("HTTP Response code: ");
-      //  Serial.println(httpResponseCode);
-
       // Free resources
       http.end();
     } else {
       Serial.println("WiFi Disconnected");
     }
-
+    
+    // Link - How to use HTTP GET & POST - https://randomnerdtutorials.com/esp32-http-get-post-arduino/
     // Send http GET -----------------------------
     HTTPClient httpget;
 
+    // Data to get with HTTP GET
     String serverPath = serverName + String("/latest/lux");
 
     httpget.begin(serverPath.c_str());
@@ -138,6 +138,10 @@ void loop()
       Serial.print("Error code: ");
       Serial.println(httpgetResponseCode);
     }
+    
+    // Free resources
+    httpget.end();
+    
     lastTime = millis();
   }
 }
